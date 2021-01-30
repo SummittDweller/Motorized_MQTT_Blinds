@@ -63,6 +63,11 @@ Dupont Crimper and Connector Set: https://amzn.to/2X1Oeap
 ## Additional Resources
 
 ### NodeMCU (Arduino) Info
+
+Note that there are comm port issues with Big Sur that impact Arduino.  For more info see:
+https://github.com/esp8266/Arduino/issues/7763 and the fix in https://forum.arduino.cc/index.php?topic=702144.0.
+
+#### Now for the Resources
 https://www.open-homeautomation.com/2016/06/10/program-an-esp8266-from-arduino-on-macos/
 https://en.wikipedia.org/wiki/NodeMCU
 https://www.instructables.com/How-to-Program-NodeMCU-on-Arduino-IDE/
