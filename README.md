@@ -59,3 +59,44 @@ Ender3 3d Printer: https://amzn.to/2GcznnZ
 Dupont Crimper and Connector Set: https://amzn.to/2X1Oeap
 
 ## Alexa only support available in the releases tab of this repo!
+
+## Additional Resources
+
+### NodeMCU (Arduino) Info
+https://www.open-homeautomation.com/2016/06/10/program-an-esp8266-from-arduino-on-macos/
+https://en.wikipedia.org/wiki/NodeMCU
+https://www.instructables.com/How-to-Program-NodeMCU-on-Arduino-IDE/
+https://github.com/nodemcu/nodemcu-firmware
+https://medium.com/@bass.pj/nodemcu-esp8266-getting-started-with-arduino-on-macos-1cdc61565496
+
+From the Amazon.com product description...
+
+Product description:
+ESP8266 is a highly integrated chip designed for the needs of a new connected world. It offers a complete and self-contained Wi-Fi networking solution, allowing it to either host the application or to offload all Wi-Fi networking functions from another application processor.
+
+Instruction & Steps of How to Use:
+
+1. Download the Arduino IDE, the latest version.
+2. Install the IDE
+3. Set up your Arduino IDE as: Go to File->Preferences and copy the URL below to get the ESP board manager extensions: http://arduino.esp8266.com/stable/package_esp8266com_index.json Placing the http:// before the URL lets the Arduino IDE use it...otherwise it gives you a protocol error.
+4. Go to Tools > Board > Board Manager> Type "esp8266" and download the Community esp8266 and install.
+5. Set up your chip as:
+Tools -> Board -> NodeMCU 1.0 (ESP-12E Module)
+Tools -> Flash Size -> 4M (3M SPIFFS)
+Tools -> CPU Frequency -> 80 Mhz
+Tools -> Upload Speed -> 921600
+Tools-->Port--> (whatever it is)
+6. Download and run the 32 bit flasher exe at Github(Search for nodemcu/nodemcu-flasher/tree/master/ at Github) github.com/nodemcu/nodemcu-flasher/tree/master/Win32/Release Or download and run the 64 bit flasher exe at: github.com/nodemcu/nodemcu-flasher/tree/master/Win64/Release
+7. In Arduino IDE, look for the old fashioned Blink program. Load, compile and upload.
+8. Go to FILE> EXAMPLES> ESP8266> BLINK, it will start blinking. 
+
+### Control via Arduino Uno
+https://www.makerguides.com/28byj-48-stepper-motor-arduino-tutorial/
+https://www.seeedstudio.com/blog/2019/03/04/driving-a-28byj-48-stepper-motor-with-a-uln2003-driver-board-and-arduino/
+https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/
+
+### Control via Raspberry Pi
+https://www.aranacorp.com/en/control-a-stepper-with-raspberrypi/
+http://www.scraptopower.co.uk/Raspberry-Pi/how-to-connect-stepper-motors-a-raspberry-pi
+https://www.raspberrypi-spy.co.uk/2012/07/stepper-motor-control-in-python/
+https://tutorials-raspberrypi.com/how-to-control-a-stepper-motor-with-raspberry-pi-and-l293d-uln2003a/
