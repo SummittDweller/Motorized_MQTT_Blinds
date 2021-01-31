@@ -60,9 +60,17 @@ Dupont Crimper and Connector Set: https://amzn.to/2X1Oeap
 
 ## Alexa only support available in the releases tab of this repo!
 
-## Additional Resources
+# Additional Resources
+
+##  MQTT Server Creation
+https://www.google.com/search?client=firefox-b-1-d&q=mqtt+server
+https://www.home-assistant.io/docs/mqtt/broker/
+https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/raspberry-pi-server-setup
+https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/mqtt-setup
 
 ### NodeMCU (Arduino) Info
+
+**Attention!** Make sure you are using a micro-USB cable that supports _*data*_ as well as power!
 
 Note that there are comm port issues with Big Sur that impact Arduino.  For more info see:
 https://github.com/esp8266/Arduino/issues/7763 and the fix in https://forum.arduino.cc/index.php?topic=702144.0.
@@ -73,6 +81,7 @@ https://en.wikipedia.org/wiki/NodeMCU
 https://www.instructables.com/How-to-Program-NodeMCU-on-Arduino-IDE/
 https://github.com/nodemcu/nodemcu-firmware
 https://medium.com/@bass.pj/nodemcu-esp8266-getting-started-with-arduino-on-macos-1cdc61565496
+https://electrosome.com/esp8266-arduino-programming-led-blink/    <<-- LED blink test
 
 From the Amazon.com product description...
 
