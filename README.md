@@ -51,7 +51,7 @@ cover:
     position_open: 0
     position_closed: 12
   ```
-  
+
 ## Recommended Tools
 
 Ender3 3d Printer: https://amzn.to/2GcznnZ
@@ -67,6 +67,10 @@ https://www.google.com/search?client=firefox-b-1-d&q=mqtt+server
 https://www.home-assistant.io/docs/mqtt/broker/
 https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/raspberry-pi-server-setup
 https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/mqtt-setup
+
+## Home Assistant Configuration
+http://homeassistant.local:8123        <<-- My Home Assitant, an RPI B+ located in my office closet
+https://www.home-assistant.io/getting-started/onboarding/
 
 ### NodeMCU (Arduino) Info
 
@@ -102,7 +106,7 @@ Tools -> Upload Speed -> 921600
 Tools-->Port--> (whatever it is)
 6. Download and run the 32 bit flasher exe at Github(Search for nodemcu/nodemcu-flasher/tree/master/ at Github) github.com/nodemcu/nodemcu-flasher/tree/master/Win32/Release Or download and run the 64 bit flasher exe at: github.com/nodemcu/nodemcu-flasher/tree/master/Win64/Release
 7. In Arduino IDE, look for the old fashioned Blink program. Load, compile and upload.
-8. Go to FILE> EXAMPLES> ESP8266> BLINK, it will start blinking. 
+8. Go to FILE> EXAMPLES> ESP8266> BLINK, it will start blinking.
 
 ### Control via Arduino Uno
 https://www.makerguides.com/28byj-48-stepper-motor-arduino-tutorial/
