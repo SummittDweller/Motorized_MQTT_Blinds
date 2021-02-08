@@ -69,10 +69,11 @@ https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/raspberry-p
 https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/mqtt-setup
 
 ## Home Assistant Configuration
-http://homeassistant.local:8123   -- My Home Assistant, an RPI B+ located in my office closet
+http://homeassistant.local:8123        -- My Home Assitant, an RPI B+ located in my office closet
 https://www.home-assistant.io/getting-started/onboarding/
 
 ### NodeMCU (Arduino) Info
+
 **Attention!** Make sure you are using a micro-USB cable that supports _*data*_ as well as power!
 
 Note that there are comm port issues with Big Sur that impact Arduino.  For more info see:
@@ -108,26 +109,12 @@ Tools-->Port--> (whatever it is)
 8. Go to FILE> EXAMPLES> ESP8266> BLINK, it will start blinking.
 
 ### Control via Arduino Uno
-https://www.makerguides.com/28byj-48-stepper-motor-arduino-tutorial/  
-https://www.seeedstudio.com/blog/2019/03/04/driving-a-28byj-48-stepper-motor-with-a-uln2003-driver-board-and-arduino/  
-https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/  
+https://www.makerguides.com/28byj-48-stepper-motor-arduino-tutorial/
+https://www.seeedstudio.com/blog/2019/03/04/driving-a-28byj-48-stepper-motor-with-a-uln2003-driver-board-and-arduino/
+https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/
 
 ### Control via Raspberry Pi
-https://www.aranacorp.com/en/control-a-stepper-with-raspberrypi/  
-http://www.scraptopower.co.uk/Raspberry-Pi/how-to-connect-stepper-motors-a-raspberry-pi  
-https://www.raspberrypi-spy.co.uk/2012/07/stepper-motor-control-in-python/  
-https://tutorials-raspberrypi.com/how-to-control-a-stepper-motor-with-raspberry-pi-and-l293d-uln2003a/  
-
-### Projects Using 28BYJ-48 w/ Supplied Drivers
-https://www.youtube.com/watch?v=avrdDZD7qEQ  
-https://create.arduino.cc/projecthub/debanshudas23/getting-started-with-stepper-motor-28byj-48-3de8c9  
-https://www.instructables.com/Arduino-28BJY-48-Stepper-Motor-Simple-and-Improved/  
-https://www.makerguides.com/28byj-48-stepper-motor-arduino-tutorial/  
-https://www.hackster.io/BEASTIDREES62/driving-28byj-48-stepper-motor-control-with-joystick-544122  
-https://hackaday.io/projects?tag=28ByJ-48  
-https://www.seeedstudio.com/blog/2019/03/04/driving-a-28byj-48-stepper-motor-with-a-uln2003-driver-board-and-arduino/  
-
-### RaspberryPi 3B Projects for 28BYJ-48 Stepper Motor
-http://www.scraptopower.co.uk/Raspberry-Pi/how-to-connect-stepper-motors-a-raspberry-pi  
-https://tutorials-raspberrypi.com/how-to-control-a-stepper-motor-with-raspberry-pi-and-l293d-uln2003a/  
-https://www.aranacorp.com/en/control-a-stepper-with-raspberrypi/  
+https://www.aranacorp.com/en/control-a-stepper-with-raspberrypi/
+http://www.scraptopower.co.uk/Raspberry-Pi/how-to-connect-stepper-motors-a-raspberry-pi
+https://www.raspberrypi-spy.co.uk/2012/07/stepper-motor-control-in-python/
+https://tutorials-raspberrypi.com/how-to-control-a-stepper-motor-with-raspberry-pi-and-l293d-uln2003a/
