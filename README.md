@@ -62,6 +62,9 @@ Dupont Crimper and Connector Set: https://amzn.to/2X1Oeap
 
 # Additional Resources
 
+## Dupont Connector Guide
+https://www.instructables.com/Make-a-Good-Dupont-Pin-Crimp-EVERY-TIME/
+
 ##  MQTT Server Creation
 https://www.google.com/search?client=firefox-b-1-d&q=mqtt+server
 https://www.home-assistant.io/docs/mqtt/broker/
