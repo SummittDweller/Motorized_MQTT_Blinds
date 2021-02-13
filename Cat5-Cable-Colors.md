@@ -2,11 +2,11 @@
 
 In my version of the project the Cat5 cable runs have the following color correspondence:
 
-| Cat5 Color | Purpose | Corresponding Schematic.jpg Color |
+| Schematic | Cat5 Color | Purpose |
 | --- | --- | --- |
-| Green + Green/White | Ground / Common | Black |
-| Orange + Orange/White | +12v Power | Red |
-| Brown | Step | Blue |
-| Brown/White | Direction | Magenta |
-| Blue | Enable | Bright Green |
-| Blue/White | +5v Power | Yellow |
+| Black | Green Pair | Common |
+| Red | Orange Pair | +12v Power |
+| Blue | Brown | Direction |
+| Magenta | Brown/White | Step |
+| Green | Blue | Enable |
+| Yellow | Blue/White | +5v Power |
