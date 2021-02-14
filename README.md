@@ -65,7 +65,6 @@ Dupont Crimper and Connector Set: https://amzn.to/2X1Oeap
 ## DRV8825 Stepper Motor Driver Chip
 https://lastminuteengineers.com/drv8825-stepper-motor-driver-arduino-tutorial/
 
-
 ## Dupont Connector Guide
 https://www.instructables.com/Make-a-Good-Dupont-Pin-Crimp-EVERY-TIME/
 
