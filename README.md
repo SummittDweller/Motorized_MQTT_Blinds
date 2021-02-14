@@ -62,6 +62,10 @@ Dupont Crimper and Connector Set: https://amzn.to/2X1Oeap
 
 # Additional Resources
 
+## DRV8825 Stepper Motor Driver Chip
+https://lastminuteengineers.com/drv8825-stepper-motor-driver-arduino-tutorial/
+
+
 ## Dupont Connector Guide
 https://www.instructables.com/Make-a-Good-Dupont-Pin-Crimp-EVERY-TIME/
 
@@ -76,6 +80,8 @@ http://homeassistant.local:8123        -- My Home Assitant, an RPI B+ located in
 https://www.home-assistant.io/getting-started/onboarding/
 
 ### NodeMCU (Arduino) Info
+
+MAC Address of 1st NodeMCU:  84:CC:A8:82:DE:0A
 
 **Attention!** Make sure you are using a micro-USB cable that supports _*data*_ as well as power!
 
@@ -121,3 +127,42 @@ https://www.aranacorp.com/en/control-a-stepper-with-raspberrypi/
 http://www.scraptopower.co.uk/Raspberry-Pi/how-to-connect-stepper-motors-a-raspberry-pi
 https://www.raspberrypi-spy.co.uk/2012/07/stepper-motor-control-in-python/
 https://tutorials-raspberrypi.com/how-to-control-a-stepper-motor-with-raspberry-pi-and-l293d-uln2003a/
+
+# Alexa ONLY Control... the GOOD Stuff
+
+  - Lifted from https://github.com/thehookup/Motorized_MQTT_Blinds/releases/tag/Alexa_No_Hub
+
+## Alexa Only with WiFi Manager
+
+@thehookup thehookup released this on Apr 11, 2019 · 10 commits to master since this release
+
+This release uses Amazon Alexa local control and WiFi Manager to configure and control your blinds. No other hub or device (other than a wifi router) is required for this version and there is no MQTT control.
+
+This is a pre-compiled bin file to upload to a NodeMCU using the ESPEasy flashing tool (instructions below).
+
+  Install Instructions:
+
+      Download the ESPEasy Flashing tool here: https://github.com/letscontrolit/ESPEasy/releases/
+      Extract the zip file from the above link to your computer
+      Download the .bin file for this release and place it in the same folder as the ESPEasy flashing tool.
+      Plug in your NodeMCU using a USB Cable
+      Run FlashESP8266.exe
+      Select this bin file (Alexa_Only_Blinds.bin) under the firmware dropdown and press "Flash"
+
+  Setup Instructions:
+
+      Connect to the "Blinds Setup" wifi access point that is being broadcast by your NodeMCU
+      Enter your WiFi SSID and Password
+      Enter the number of rotations required for your blinds to fully open/close (12 Recommended)
+      Press save and wire your blinds as shown in the wiring diagram on the main page of this repository.
+
+  **If you mess up your settings you can connect a wire between GND and D1 to clear the saved settings on the NodeMCU.
+  If you have issues with discovery please try the "Blinds_CONFIGURE_Portal_Alexa_Core_2.3.bin" file
+
+  Assets 4
+  Alexa_Only_Blinds.bin
+  408 KB
+  Blinds_CONFIGURE_Portal_Alexa_Core_2.3.bin
+  358 KB
+  Source code (zip)
+  Source code (tar.gz) 

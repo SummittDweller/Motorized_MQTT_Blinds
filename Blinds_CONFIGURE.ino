@@ -1,9 +1,9 @@
-#include <SimpleTimer.h>    //https://github.com/marcelloromani/Arduino-SimpleTimer/tree/master/SimpleTimer
-#include <ESP8266WiFi.h>    //if you get an error here you need to install the ESP8266 board manager 
-#include <ESP8266mDNS.h>    //if you get an error here you need to install the ESP8266 board manager 
-#include <PubSubClient.h>   //https://github.com/knolleary/pubsubclient
-#include <ArduinoOTA.h>     //https://github.com/esp8266/Arduino/tree/master/libraries/ArduinoOTA
-#include <AH_EasyDriver.h>  //http://www.alhin.de/arduino/downloads/AH_EasyDriver_20120512.zip
+#include <SimpleTimer.h>    // https://github.com/marcelloromani/Arduino-SimpleTimer/tree/master/SimpleTimer
+#include <ESP8266WiFi.h>    // if you get an error here you need to install the ESP8266 board manager 
+#include <ESP8266mDNS.h>    // if you get an error here you need to install the ESP8266 board manager 
+#include <PubSubClient.h>   // https://github.com/knolleary/pubsubclient
+#include <ArduinoOTA.h>     // https://github.com/esp8266/Arduino/tree/master/libraries/ArduinoOTA
+#include <AH_EasyDriver.h>  // http://www.alhin.de/arduino/downloads/AH_EasyDriver_20120512.zip
 
 /*****************  START USER CONFIG SECTION *********************************/
 /*****************  START USER CONFIG SECTION *********************************/
@@ -18,12 +18,12 @@
 #define USER_MQTT_PASSWORD        "YOUR_MQTT_PASSWORD"
 #define USER_MQTT_CLIENT_NAME     "BlindsMCU"         // Used to define MQTT topics, MQTT Client ID, and ArduinoOTA
 
-#define STEPPER_SPEED             35                  //Defines the speed in RPM for your stepper motor
-#define STEPPER_STEPS_PER_REV     1028                //Defines the number of pulses that is required for the stepper to rotate 360 degrees
-#define STEPPER_MICROSTEPPING     0                   //Defines microstepping 0 = no microstepping, 1 = 1/2 stepping, 2 = 1/4 stepping 
-#define DRIVER_INVERTED_SLEEP     1                   //Defines sleep while pin high.  If your motor will not rotate freely when on boot, comment this line out.
+#define STEPPER_SPEED             35                  // Defines the speed in RPM for your stepper motor
+#define STEPPER_STEPS_PER_REV     1028                // Defines the number of pulses that is required for the stepper to rotate 360 degrees
+#define STEPPER_MICROSTEPPING     0                   // Defines microstepping 0 = no microstepping, 1 = 1/2 stepping, 2 = 1/4 stepping 
+#define DRIVER_INVERTED_SLEEP     1                   // Defines sleep while pin high.  If your motor will not rotate freely when on boot, comment this line out.
 
-#define STEPS_TO_CLOSE            12                  //Defines the number of steps needed to open or close fully
+#define STEPS_TO_CLOSE            12                  // Defines the number of steps needed to open or close fully
 
 #define STEPPER_DIR_PIN           D6
 #define STEPPER_STEP_PIN          D7
@@ -42,7 +42,7 @@ PubSubClient client(espClient);
 SimpleTimer timer;
 AH_EasyDriver shadeStepper(STEPPER_STEPS_PER_REV, STEPPER_DIR_PIN ,STEPPER_STEP_PIN,STEPPER_MICROSTEP_1_PIN,STEPPER_MICROSTEP_2_PIN,STEPPER_SLEEP_PIN);
 
-//Global Variables
+// Global Variables
 bool boot = true;
 int currentPosition = 0;
 int newPosition = 0;
@@ -61,7 +61,7 @@ const char *mqtt_client_name = USER_MQTT_CLIENT_NAME ;
 
 
 
-//Functions
+// Functions
 void setup_wifi() {
   // We start by connecting to a WiFi network
   Serial.println();
@@ -217,7 +217,7 @@ void checkIn()
 }
 
 
-//Run once setup
+// Run once setup
 void setup() {
   Serial.begin(115200);
   shadeStepper.setMicrostepping(STEPPER_MICROSTEPPING);            // 0 -> Full Step                                
@@ -249,4 +249,3 @@ void loop()
   ArduinoOTA.handle();
   timer.run();
 }
-
