@@ -88,6 +88,10 @@ MAC Address of 1st NodeMCU:  84:CC:A8:82:DE:0A
 Note that there are comm port issues with Big Sur that impact Arduino.  For more info see:
 https://github.com/esp8266/Arduino/issues/7763 and the fix in https://forum.arduino.cc/index.php?topic=702144.0.
 
+#### NodeMCU and Alexa
+https://www.instructables.com/How-To-DIY-Home-Automation-With-NodeMCU-and-Amazon/    --not all that helpful
+https://randomnerdtutorials.com/alexa-echo-with-esp32-and-esp8266/  --helped with libraries install
+
 #### Now for the Resources
 https://www.open-homeautomation.com/2016/06/10/program-an-esp8266-from-arduino-on-macos/
 https://en.wikipedia.org/wiki/NodeMCU
