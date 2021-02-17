@@ -20,5 +20,15 @@ cd ~/GitHub/Motorized_MQTT_Blinds/Alexa-Only
   --flash_freq 80m                            \
   --flash_mode qio                            \
   --flash_size 32m                            \
-  0x0000 Alexa_Only_Blinds.bin                       
+  0x0000 Alexa_Only_Blinds.bin
+```
+
+### On My Mac Mini
+```
+╭─mark@Marks-Mac-Mini ~/GitHub/Motorized_MQTT_Blinds/Alexa-Only ‹master›
+╰─$ sudo python3 /usr/local/bin/esptool.py --baud 115200 --port /dev/tty.usbserial-0001 erase_flash
+╭─mark@Marks-Mac-Mini ~/GitHub/Motorized_MQTT_Blinds/Alexa-Only ‹master›
+╰─$ sudo python3 /usr/local/bin/esptool.py --baud 115200 --port /dev/tty.usbserial-0001 write_flash -fm dio 0x00000 ./Blinds_CONFIGURE_Portal_Alexa_Core_2.3.bin
+╭─mark@Marks-Mac-Mini ~/GitHub/Motorized_MQTT_Blinds/Alexa-Only ‹master›
+╰─$ sudo python3 /usr/local/bin/esptool.py --baud 115200 --port /dev/tty.usbserial-0001 write_flash -fm dio 0x00000 ./Alexa_Only_Blinds.bin
 ```
